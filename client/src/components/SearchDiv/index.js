@@ -1,4 +1,5 @@
 import React from "react";
+import SearchBtn from "../SearchBtn";
 import "./style.css";
 
 function SearchDiv() {
@@ -7,7 +8,7 @@ function SearchDiv() {
       <h5>Book Search</h5>
       <p>Book:</p>
       <input className="col-12" type="text"></input>
-      <button>Search</button>
+      <SearchBtn />
     </div>
   );
 }
