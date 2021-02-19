@@ -4,11 +4,13 @@ import Book from "../components/Book";
 import API from "../utils/API";
 
 function Saved() {
-  return <div>
+  return (
+    <div>
       <SavedDiv>
-          <Book />
+        <Book />
       </SavedDiv>
-  </div>;
+    </div>
+  );
 }
 
 export default Saved;
