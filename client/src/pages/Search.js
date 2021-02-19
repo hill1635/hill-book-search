@@ -22,11 +22,7 @@ function Search() {
   return (
     <div>
       <SearchDiv onClick={handleSubmit} />
-      <ResultsDiv>
-        <Book 
-        handleSubmit={handleSubmit}
-        />
-      </ResultsDiv>
+      <ResultsDiv resultsList={resultsList} />
     </div>
   );
 }
