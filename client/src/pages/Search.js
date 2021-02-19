@@ -5,13 +5,14 @@ import Book from "../components/Book";
 import API from "../utils/API";
 
 function Search() {
-return (
+  return (
     <div>
-        <SearchDiv />
-        <ResultsDiv>
-            <Book />
-        </ResultsDiv>
+      <SearchDiv />
+      <ResultsDiv>
+        <Book />
+      </ResultsDiv>
     </div>
+  );
 }
 
 export default Search;
