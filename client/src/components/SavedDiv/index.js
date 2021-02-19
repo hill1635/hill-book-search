@@ -3,7 +3,7 @@ import "./style.css";
 
 function SavedDiv() {
   return (
-    <div className="savedDiv col-12 mx-auto">
+    <div className="savedDiv col-11 mx-auto mt-5">
       <h5>Saved Books</h5>
       <hr></hr>
       <p>Coming soon.</p>
