@@ -6,9 +6,7 @@ import API from "../utils/API";
 function Saved() {
   return (
     <div>
-      <SavedDiv>
-        <Book />
-      </SavedDiv>
+      <SavedDiv />
     </div>
   );
 }
