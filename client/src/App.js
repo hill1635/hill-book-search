@@ -4,6 +4,7 @@ import Saved from "./pages/Saved";
 import Search from "./pages/Search";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Route exact path="/" component={Search} />
         <Route exact path="/saved" component={Saved} />
+        <Footer />
       </div>
     </Router>
   );
