@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
 
-function SearchBtn() {
+function SearchBtn({ onClick }) {
   return (
     <div className="col-12 mx-auto">
-      <button className="searchBtn">Search</button>
+      <button className="searchBtn" onClick={onClick}>Search</button>
     </div>
   );
 }

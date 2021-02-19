@@ -3,7 +3,8 @@ import ViewBtn from "../ViewBtn";
 import SaveBtn from "../SaveBtn";
 import "./style.css";
 
-function Book() {
+function Book(props) {
+  console.log("bookProps: ", props);
   return (
     <div className="bookCard p-3">
       <h5>Title</h5>

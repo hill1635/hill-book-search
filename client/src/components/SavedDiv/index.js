@@ -7,7 +7,6 @@ function SavedDiv() {
     <div className="savedDiv col-11 mx-auto mt-5 p-3">
       <h5>Saved Books</h5>
       <hr></hr>
-      <Book />
     </div>
   );
 }
