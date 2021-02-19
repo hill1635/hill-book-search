@@ -1,12 +1,13 @@
 import React from "react";
-import "./style.css"
+import "./style.css";
 
 function Header() {
-    return (
-        <div>
-
-        </div>
-    );
+  return (
+    <div>
+      <h1>Google Books Search</h1>
+      <h3>Search for and Save Books of Interest</h3>
+    </div>
+  );
 }
 
 export default Header;
