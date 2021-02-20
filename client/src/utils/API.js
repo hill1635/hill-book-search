@@ -1,9 +1,9 @@
 import axios from "axios";
 
 export default {
-  getBooks: function () {
+  getBooks: function (search) {
     return axios.get(
-      "https://www.googleapis.com/books/v1/volumes?q=harry+potter"
+      "https://www.googleapis.com/books/v1/volumes?q=" + search
     );
   },
 };

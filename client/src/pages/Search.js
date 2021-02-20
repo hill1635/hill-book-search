@@ -6,10 +6,12 @@ import API from "../utils/API";
 
 function Search() {
   const [resultsList, setResultsList] = useState([]);
+  const [search, setSearch] = useState();
 
   function handleSubmit(e) {
     e.preventDefault();
-    API.getBooks()
+    console.log("e: ", e);
+    API.getBooks(search)
       .then((books) => {
         var response = books.data.items;
         setResultsList(response);
@@ -21,7 +23,7 @@ function Search() {
 
   return (
     <div>
-      <SearchDiv onClick={handleSubmit} />
+      <SearchDiv onClick={handleSubmit} setSearch={setSearch} />
       <ResultsDiv resultsList={resultsList} />
     </div>
   );
