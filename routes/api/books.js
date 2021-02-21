@@ -4,7 +4,7 @@ const booksController = require("../../controllers/booksController");
 //POST, GET, and DELETE Routes
 router
   .route("/")
-  .length(booksController.findAll)
+  .get(booksController.findAll)
   .post(booksController.create);
 
 router.route("/:id")
