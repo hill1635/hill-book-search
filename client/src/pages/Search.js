@@ -10,7 +10,7 @@ function Search() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log("e: ", e);
+    // var apiSearch = search.replace(" ", "+");
     API.getBooks(search)
       .then((books) => {
         var response = books.data.items;
@@ -21,9 +21,13 @@ function Search() {
       .catch((err) => console.log(err));
   }
 
+  function searchBooks(e) {
+    setSearch(e.target.value);
+  }
+
   return (
     <div>
-      <SearchDiv onClick={handleSubmit} setSearch={setSearch} />
+      <SearchDiv onClick={handleSubmit} onChange={searchBooks} search={search} />
       <ResultsDiv resultsList={resultsList} />
     </div>
   );
