@@ -10,13 +10,11 @@ function Search() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    // var apiSearch = search.replace(" ", "+");
     API.getBooks(search)
       .then((books) => {
         var response = books.data.items;
         setResultsList(response);
         console.log("results: ", resultsList);
-        // return;
       })
       .catch((err) => console.log(err));
   }
