@@ -1,23 +1,26 @@
 import React from "react";
 import ViewBtn from "../ViewBtn";
+import DeleteBtn from "../DeleteBtn";
 import "./style.css";
 
 function SavedDiv(props) {
-  // console.log("savedProps: ", props);
+  // console.log(props.saved);
+
   return (
-    <div className="savedDiv col-11 mx-auto mt-5 p-3">
+    <div className="savedDiv col-11 mx-auto mt-5 p-3" onLoad={props.onLoad}>
       <h5>Saved Books</h5>
       <hr></hr>
-      {props.saved.data.map((book) => (
+      {props.saved.map((book) => (
         <div className="savedCard p-3">
           <h5>{book.title}</h5>
           <ViewBtn />
+          <DeleteBtn saved={book} />
           <p>Written by {book.author}</p>
           <img
-            src={book.img}
+            src={book.smImg}
             alt={book.title}
           ></img>
-          <p>{book.description}</p>
+          <p>{book.synopsis}</p>
         </div>
       ))}
     </div>
