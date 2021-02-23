@@ -1,3 +1,7 @@
 nav {
     background-color: #121212df;
 }
+
+span:hover {
+    cursor: default;
+}
