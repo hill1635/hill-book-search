@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import SearchDiv from "../components/SearchDiv";
 import ResultsDiv from "../components/ResultsDiv";
-import Book from "../components/Book";
 import API from "../utils/API";
 
 function Search() {
@@ -23,14 +22,10 @@ function Search() {
     setSearch(e.target.value);
   }
 
-  function saveBook(e) {
-    console.log("this: ", e.target.parentNode);
-  }
-
   return (
     <div>
       <SearchDiv onClick={handleSubmit} onChange={searchState} search={search} />
-      <ResultsDiv resultsList={resultsList} onClick={saveBook} />
+      <ResultsDiv resultsList={resultsList} />
     </div>
   );
 }
