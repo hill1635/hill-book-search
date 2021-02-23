@@ -8,7 +8,7 @@ function SaveBtn(props) {
   function saveBook() {
     var book = {
       title: bookInfo.title,
-      author: bookInfo.authors.toString(),
+      author: bookInfo.authors.join(", "),
       synopsis: bookInfo.description,
     };
     API.postBook(book);
