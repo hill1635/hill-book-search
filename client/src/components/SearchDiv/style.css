@@ -1,3 +1,9 @@
 .searchDiv {
   border-style: solid;
 }
+
+.searchDiv:after {
+  content: "";
+  display: table;
+  clear: both;
+}

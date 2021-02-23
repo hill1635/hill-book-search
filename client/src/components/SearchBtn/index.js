@@ -3,9 +3,7 @@ import "./style.css";
 
 function SearchBtn(props) {
   return (
-    <div className="col-12 mx-auto">
-      <button className="searchBtn" onClick={props.onClick}>Search</button>
-    </div>
+      <button className="searchBtn rounded btn-primary ml-1 float-right" onClick={props.onClick}>Search</button>
   );
 }
 
