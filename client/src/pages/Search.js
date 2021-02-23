@@ -10,11 +10,11 @@ function Search() {
 
   function handleSubmit(e) {
     e.preventDefault();
+
     API.searchBooks(search)
       .then((books) => {
         var response = books.data.items;
         setResultsList(response);
-        console.log("results: ", resultsList);
       })
       .catch((err) => console.log(err));
   }
@@ -23,10 +23,14 @@ function Search() {
     setSearch(e.target.value);
   }
 
+  function saveBook(e) {
+    console.log("this: ", e.target.parentNode);
+  }
+
   return (
     <div>
       <SearchDiv onClick={handleSubmit} onChange={searchState} search={search} />
-      <ResultsDiv resultsList={resultsList} />
+      <ResultsDiv resultsList={resultsList} onClick={saveBook} />
     </div>
   );
 }

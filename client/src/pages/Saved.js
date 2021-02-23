@@ -10,9 +10,9 @@ function Saved() {
     API.getBooks()
       .then((res) => {
         setSaved(res);
-        console.log("savedBooks: ", res);
       })
       .catch((err) => console.log(err));
+      return;
   }
   renderSaved();
   

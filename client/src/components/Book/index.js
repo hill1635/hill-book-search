@@ -3,16 +3,17 @@ import ViewBtn from "../ViewBtn";
 import SaveBtn from "../SaveBtn";
 import "./style.css";
 
-function Book({ resultsList }) {
+function Book(props) {
+
   return (
     <div>
-      {resultsList.map((book) => (
+      {props.resultsList.map((book) => (
         <div className="bookCard p-3">
           <h5>{book.volumeInfo.title}</h5>
           <ViewBtn />
-          <SaveBtn />
+          <SaveBtn onClick={props.onClick} bookInfo={book.volumeInfo} />
           <p>Written by Author</p>
-          <img src="" alt={book.volumeInfo.title}></img>
+          <img src={book.volumeInfo.imageLinks} alt={book.volumeInfo.title}></img>
           <p>{book.volumeInfo.description}</p>
         </div>
       ))}
