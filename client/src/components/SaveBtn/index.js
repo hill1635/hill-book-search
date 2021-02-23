@@ -7,12 +7,13 @@ function SaveBtn(props) {
 
   function saveBook() {
     var book = {
+      lgImg: bookInfo.imageLinks.thumbnail,
+      smImg: bookInfo.imageLinks.smallThumbnail,
       title: bookInfo.title,
       author: bookInfo.authors.join(", "),
       synopsis: bookInfo.description,
     };
     API.postBook(book);
-    console.log("saved");
   }
 
   return <button onClick={saveBook}>Save</button>;
