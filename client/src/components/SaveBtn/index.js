@@ -16,7 +16,7 @@ function SaveBtn(props) {
     API.postBook(book);
   }
 
-  return <button onClick={saveBook}>Save</button>;
+  return <button className="rounded btn-success" onClick={saveBook}>Save</button>;
 }
 
 export default SaveBtn;

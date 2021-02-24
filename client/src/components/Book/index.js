@@ -8,7 +8,7 @@ function Book(props) {
   return (
     <div>
       {props.resultsList.map((book) => (
-        <div className="bookCard p-3">
+        <div className="bookCard p-3 border rounded">
           <h5>{book.volumeInfo.title}</h5>
           <ViewBtn />
           <SaveBtn bookInfo={book.volumeInfo} />

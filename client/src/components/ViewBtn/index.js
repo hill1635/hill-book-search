@@ -3,9 +3,7 @@ import "./style.css";
 
 function ViewBtn() {
   return (
-    <div>
-      <button>View</button>
-    </div>
+      <button className="rounded btn-warning">View</button>
   );
 }
 

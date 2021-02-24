@@ -8,7 +8,7 @@ function DeleteBtn(props) {
     API.deleteBook(props.saved._id);
   }
 
-  return <button onClick={deleteBook}>Delete</button>;
+  return <button className="rounded btn-danger" onClick={deleteBook}>Delete</button>;
 }
 
 export default DeleteBtn;
