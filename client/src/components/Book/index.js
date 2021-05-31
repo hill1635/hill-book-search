@@ -30,7 +30,6 @@ function Book(props) {
             src={book.smImg}
             alt={book.title}
           ></img>
-          <p>{book.synopsis}</p>
         </div>
       ))}
     </div>
