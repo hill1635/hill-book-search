@@ -13,7 +13,7 @@ function SavedDiv(props) {
       {props.saved.map((book) => (
         <div className="savedCard p-3">
           <h5>{book.title}</h5>
-          <ViewBtn />
+          <ViewBtn bookInfo={book} />
           <DeleteBtn saved={book} />
           <p>Written by {book.author}</p>
           <img

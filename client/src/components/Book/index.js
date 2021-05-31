@@ -10,7 +10,7 @@ function Book(props) {
       {props.resultsList.map((book) => (
         <div className="bookCard p-3 border rounded">
           <h5>{book.volumeInfo.title}</h5>
-          <ViewBtn />
+          <ViewBtn bookInfo={book.volumeInfo}/>
           <SaveBtn bookInfo={book.volumeInfo} />
           <p>Written by Author</p>
           <img src={book.volumeInfo.imageLinks} alt={book.volumeInfo.title}></img>
