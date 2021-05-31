@@ -6,7 +6,11 @@ function ViewBtn(props) {
     console.log(props);
   }
 
-  return <button className="rounded btn-warning" onClick={viewBook}>View</button>;
+  return (
+    <button type="button" className="rounded btn-warning" onClick={viewBook}>
+      View
+    </button>
+  );
 }
 
 export default ViewBtn;
