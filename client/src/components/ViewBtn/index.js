@@ -2,8 +2,11 @@ import React from "react";
 import "./style.css";
 
 function ViewBtn(props) {
-    // console.log(props);
-  return <button className="rounded btn-warning">View</button>;
+  function viewBook() {
+    console.log(props);
+  }
+
+  return <button className="rounded btn-warning" onClick={viewBook}>View</button>;
 }
 
 export default ViewBtn;
