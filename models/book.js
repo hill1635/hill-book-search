@@ -22,7 +22,7 @@ const bookSchema = new Schema({
     publisher: {
         type: String
     },
-    publisherDate: {
+    publishedDate: {
         type: String
     },
     rating: {
