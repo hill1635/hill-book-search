@@ -21,15 +21,12 @@ function Book(props) {
   return (
     <div>
       {bookList.map((book) => (
-        <div className="bookCard p-3 border rounded">
+        <div className="bookCard col-4 p-2 border border-solid rounded text-center d-inline-block">
+          <img src={book.smImg} alt={book.title}></img>
           <h5>{book.title}</h5>
+          <p>Written by {book.author}</p>
           <ViewBtn bookInfo={book} />
           <SaveBtn bookInfo={book} />
-          <p>Written by {book.author}</p>
-          <img
-            src={book.smImg}
-            alt={book.title}
-          ></img>
         </div>
       ))}
     </div>
