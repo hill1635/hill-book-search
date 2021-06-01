@@ -17,7 +17,7 @@ function Book(props) {
       publisher: bookInfo.publisher,
       publishedDate: bookInfo.publishedDate,
       rating: bookInfo.averageRating,
-      snippet: bookResult.searchInfo.textSnippet,
+      // snippet: bookResult.searchInfo.textSnippet,
       synopsis: bookInfo.description,
     };
     bookList.push(book);
@@ -26,10 +26,11 @@ function Book(props) {
   return (
     <div>
       {bookList.map((book) => (
-        <div className="bookCard col-4 p-2 border border-solid rounded text-center d-inline-block">
+        <div className="bookCard d-grid g-1 col-lg-4 col-md-5 col-xs-12 p-2 border border-solid rounded text-center d-inline-block">
           <img src={book.smImg} alt={book.title}></img>
           <h5>{book.title}</h5>
-          <p>Written by {book.author}</p>
+          <p>{book.author}</p>
+          <p>Rating: {book.rating}</p>
           <div className="row col-12">
             <ViewBtn bookInfo={book} />
             <SaveBtn bookInfo={book} />
