@@ -25,8 +25,10 @@ function Book(props) {
           <img src={book.smImg} alt={book.title}></img>
           <h5>{book.title}</h5>
           <p>Written by {book.author}</p>
-          <ViewBtn bookInfo={book} />
-          <SaveBtn bookInfo={book} />
+          <div className="row col-12">
+            <ViewBtn bookInfo={book} />
+            <SaveBtn bookInfo={book} />
+          </div>
         </div>
       ))}
     </div>
