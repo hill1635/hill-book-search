@@ -9,10 +9,15 @@ function Book(props) {
     console.log(bookResult);
     var bookInfo = bookResult.volumeInfo;
     var book = {
+      title: bookInfo.title,
       lgImg: bookInfo.imageLinks.thumbnail,
       smImg: bookInfo.imageLinks.smallThumbnail,
-      title: bookInfo.title,
       author: bookInfo.authors.join(", "),
+      pageCount: bookInfo.pageCount,
+      publisher: bookInfo.publisher,
+      publishedDate: bookInfo.publishedDate,
+      rating: bookInfo.averageRating,
+      snippet: bookResult.searchInfo.textSnippet,
       synopsis: bookInfo.description,
     };
     bookList.push(book);
