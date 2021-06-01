@@ -16,6 +16,21 @@ const bookSchema = new Schema({
         type: String,
         required: true
     },
+    pageCount: {
+        type: Number,
+    },
+    publisher: {
+        type: String
+    },
+    publisherDate: {
+        type: String
+    },
+    rating: {
+        type: String
+    },
+    snippet: {
+        type: String
+    },
     synopsis: String,
     date: {
         type: Date,
