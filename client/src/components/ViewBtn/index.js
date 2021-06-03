@@ -6,7 +6,7 @@ function ViewBtn(props) {
 
   return (
     <div>
-      <button type="button" className="text-warning bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modal">
+      <button type="button" className="buttons text-success bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modal">
         <i class="fas fa-book-open"></i>
       </button>
       <div className="modal fade" id="modal" tabIndex="-1" aria-labelledby="modalLabel" aria-hidden="true">

@@ -5,6 +5,7 @@ import Search from "./pages/Search";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import "./style.css";
 
 function App() {
   return (

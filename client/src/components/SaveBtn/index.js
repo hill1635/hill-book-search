@@ -8,7 +8,7 @@ function SaveBtn(props) {
   }
 
   return (
-    <button className="text-primary bg-transparent border-0" onClick={saveBook}>
+    <button className="buttons text-primary bg-transparent border-0" onClick={saveBook}>
       <i class="fas fa-save"></i>
     </button>
   );
