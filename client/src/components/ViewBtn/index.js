@@ -9,7 +9,7 @@ function ViewBtn(props) {
       <button type="button" className="rounded btn-warning" data-bs-toggle="modal" data-bs-target="#modal">
         View
       </button>
-      <div className="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div className="modal fade" id="modal" tabIndex="-1" aria-labelledby="modalLabel" aria-hidden="true">
         <div className= "modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
