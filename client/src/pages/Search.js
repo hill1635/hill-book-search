@@ -15,7 +15,7 @@ function Search() {
         var response = books.data.items;
         setResultsList(response);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => (err));
   }
 
   function searchState(e) {

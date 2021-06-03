@@ -4,7 +4,6 @@ import DeleteBtn from "../DeleteBtn";
 import "./style.css";
 
 function SavedDiv(props) {
-  // console.log(props.saved);
 
   return (
     <div className="savedDiv col-11 mx-auto mt-5 p-3 rounded" onLoad={props.onLoad}>
