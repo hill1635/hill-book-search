@@ -1,5 +1,14 @@
+.searchBtn {
+    height: 50px;
+    border-radius: 0px 150px 150px 0px;
+}
+
 .searchBtn:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.searchBtn:hover {
+    box-shadow: 0px 0px 5px rgb(46, 124, 246);
 }

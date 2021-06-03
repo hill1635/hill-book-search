@@ -1,10 +1,13 @@
-.searchDiv {
-  border-style: solid;
-  border-width: 3px;
+.searchInput {
+  height: 50px;
+  border-radius: 150px 0px 0px 150px;
 }
 
-.searchDiv:after {
-  content: "";
-  display: table;
-  clear: both;
+.searchInput:hover {
+  box-shadow: 0px 0px 5px rgb(200, 200, 200);
+}
+
+.searchInput:focus{
+  outline:0;
+  box-shadow: 0px 0px 5px rgb(200, 200, 200);
 }
