@@ -11,7 +11,7 @@ function SavedDiv(props) {
       <h5>Saved Books</h5>
       <hr></hr>
       {props.saved.map((book) => (
-        <div className="savedCard p-3">
+        <div className="savedCard p-3" key={book.title}>
           <h5>{book.title}</h5>
           <ViewBtn bookInfo={book} />
           <DeleteBtn saved={book} />

@@ -26,7 +26,7 @@ function Book(props) {
   return (
     <div>
       {bookList.map((book) => (
-        <div className="bookCard card m-5 p-0 col-lg-4 col-md-5 col-xs-12 border border-solid rounded d-inline-block">
+        <div className="bookCard card m-5 p-0 col-lg-4 col-md-5 col-xs-12 border border-solid rounded d-inline-block" key={book.title}>
           <div className="row g-0">
             <div className="col-3">
               <img src={book.lgImg} alt={book.title} className="ml-0"></img>
